@@ -1,0 +1,175 @@
+.login-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('/assets/bg-fillter.jpg');   
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.box-slogan h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #FD6A00;
+    text-transform: uppercase;
+}
+
+.box-slogan p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #FFF;
+    margin-top: .4em;
+}
+
+.box-login {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.box-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #141821;
+    padding: 5em;
+    border-radius: 1em;
+}
+
+.box-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #FD6A00;
+}
+
+.box-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-form form input {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #FD6A00;
+    background: none;
+    color: #FFF;
+    font-size: 1em;
+    transition: all ease .3s;
+}
+
+.box-form form input:focus {
+    outline: none;
+    border: 1px solid #FD6A00;
+    box-shadow: 11px 7px 1px 0px #FD6A00;
+    border-radius: .4em;
+    transition: all ease .3s;
+}
+
+.box-form form button {
+    background-color: #FD6A00;
+    border: 1px solid #FD6A00;
+    padding: .5em 0px;
+    border-radius: 2em;
+    margin-top: 1em;
+    cursor: pointer;
+    outline: none;
+    transition: all ease .3s;
+    font-size: 1em;
+}
+
+.box-form form button:hover {
+    background-color: #141821;
+    color: #FD6A00;
+    transition: all ease .3s;
+}
+
+/*Section Advantages*/
+.advantages-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+}
+
+.advantages-section h1 {
+    text-align: center;
+    font-size: 2em;
+    background: linear-gradient(to right, #526C9A, #FD6A00); 
+    background-clip: text;
+    color: transparent;
+}
+
+.advantages-section p {
+    color: #141821;
+    text-align: center;
+    width: 70%;
+    margin: 1em 0;
+}
+
+.box-advantages {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #141821;
+    border: 1px solid #141821;
+    width: 200px;
+    height: 250px;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.advantages:hover {
+    border: 1px solid #FD6A00;
+    box-shadow: 10px 10px 4px #FD6A00;
+    transition: .4s;
+}
+
+.advantages fa-icon {
+    color: #878a94;
+    font-size: 2rem;
+    transition: .4s;
+}
+
+.advantages:hover fa-icon {
+    color: #FD6A00;
+    transition: .4s;
+}
+
+.advantages p {
+    color: #878a94;    
+    transition: .4s;
+}
+
+.advantages:hover p {
+    color: #FD6A00;
+    transition: .4s;
+}
+

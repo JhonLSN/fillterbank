@@ -1,0 +1,74 @@
+<section class="login-section">
+    <div class="box-slogan">
+        <h1>Filtrando o melhor para suas finanças.</h1>
+        <p>Soluções claras e seguras para o seu futuro financeiro.</p>
+    </div>
+    <div class="box-login">
+        <div class="box-form">
+            <h2>Acesse o Fillter</h2>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <input
+                type="text"
+                placeholder="Digite seu CPF"
+                formControlName="cpf"
+                />
+                <div *ngIf="loginForm.get('cpf')?.invalid && loginForm.get('cpf')?.touched">
+                    <small>CPF inválido (precisa ter 11 números).</small>
+                  </div>
+                <input 
+                type="password"
+                placeholder="Digite sua senha"
+                formControlName="password"
+                />
+                <button type="submit" [disabled]="loginForm.invalid">Avançar</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="advantages-section">
+    <h1>VANTAGENS EM USAR O FILLTERBANK</h1>
+    <p>O Fillter é uma solução financeira moderna e confiável, projetada para oferecer segurança em todas as transações, liberdade para gerenciar suas contas em qualquer lugar e condições acessíveis para serviços como taxas e empréstimos. Nosso objetivo é simplificar a sua experiência bancária, proporcionando praticidade e benefícios reais em um único aplicativo.</p>
+    <div class="box-advantages">
+        <div class="advantages">
+            <fa-icon [icon]="faRocket"></fa-icon>
+
+            <p>Transações rápidas e sem complicações.</p>
+        </div>
+        <div class="advantages">
+            <fa-icon [icon]="faMobileScreen"></fa-icon>
+            <p>Use onde e quando quiser, em qualquer dispositivo.</p>
+        </div>
+        <div class="advantages">
+            <fa-icon [icon]="faHandshake"></fa-icon>
+            <p>Suporte dedicado para as suas necessidades.</p>
+        </div>
+        <div class="advantages">
+            <fa-icon [icon]="faBullseye"></fa-icon>
+            <p>Interface intuitiva e fácil de usar.</p>
+        </div>
+        <div class="advantages">
+            <fa-icon [icon]="faMagnifyingGlassChart"></fa-icon>
+            <p>Todas as informações claras e sem surpresas.</p>
+        </div>
+        <div class="advantages">
+            <fa-icon [icon]="faMedal"></fa-icon>
+            <p>Uma plataforma segura e reconhecida.</p>
+        </div>
+        <div class="advantages">
+            <fa-icon [icon]="faRotate"></fa-icon>
+            <p>Opções adaptáveis para diferentes perfis e objetivos financeiros.</p>
+        </div>
+        <div class="advantages">
+            <fa-icon [icon]="faLightbulb"></fa-icon>
+            <p>Recursos modernos para facilitar sua vida.</p>
+        </div>
+        <div class="advantages">
+            <fa-icon [icon]="faChartSimple"></fa-icon>
+            <p>Ferramentas para controle completo do seu dinheiro.</p>
+        </div>
+        <div class="advantages">
+            <fa-icon [icon]="faLeaf"></fa-icon>
+            <p>Operações digitais que reduzem o impacto ambiental.</p>
+        </div>              
+    </div>
+</section>

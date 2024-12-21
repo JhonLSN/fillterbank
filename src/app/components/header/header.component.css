@@ -1,0 +1,82 @@
+header {
+    display: flex
+    ;
+        justify-content: space-between;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        padding: 1em;
+        background-color: #141821e0;
+        border-bottom: 1px solid black;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        flex-direction: row;
+        box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 2em;
+    background: linear-gradient(to right, #526C9A, #FD6A00); 
+    background-clip: text;
+    color: transparent;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation ul li {
+    margin-right: 2em;
+}
+
+.navigation ul li a {
+    position: relative;
+    color: #FD6A00;
+    padding: 10px 0;
+    transition: all .5s;
+}
+
+/*Animation Navigation*/
+.navigation ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #FD6A00;
+  height: 1px;
+  transition: all .5s;
+}
+
+.navigation ul li a:hover:after {
+    width: 100%;
+}
+
+.new-account {
+    color: #FD6A00;
+    text-align: center;
+    padding: 1em 2em;
+    border: 1px solid #FD6A00;
+    border-radius: .5em;
+    transition: all .5s;
+}
+
+.new-account:hover {
+    background-color: #FD6A00;
+    color: #FFF;
+    transition: all .5s;
+}
+
+fa-icon {
+    font-size: 17px;
+    margin-left: 5px;
+}
